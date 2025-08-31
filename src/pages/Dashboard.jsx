@@ -27,17 +27,10 @@ export default function Dashboard() {
 
   return (
     <div className="mt-6">
-      <h1 className="text-2xl font-semibold mb-4">Profile Dashboard</h1>
-      <div className="grid md:grid-cols-2 gap-6">
+      {/* <h1 className="text-2xl font-semibold mb-4">Profile Dashboard</h1> */}
+      <div className=" max-w-3xl m-auto">
         <ProfileForm profile={profile} onSave={onSave} saving={saving} />
-        <div className="bg-white rounded-2xl shadow p-4">
-          <h2 className="font-semibold mb-2">How this helps RAG</h2>
-          <p className="text-sm text-gray-600">
-            Your semester, subjects, and interests guide the retrieval of
-            syllabus sections, notes, and PYQs. The chatbot uses this context to
-            answer precisely.
-          </p>
-        </div>
+        
       </div>
     </div>
   );

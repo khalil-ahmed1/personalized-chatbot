@@ -11,7 +11,7 @@ export default function MessageBubble({ role, content, muted }) {
             : "bg-gray-100"
         }`}
       >
-        {content}
+        {content} 
       </div>
     </div>
   );

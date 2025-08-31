@@ -22,6 +22,7 @@ export default function ChatWindow({ messages, onSend, loading }) {
       <div className="flex-1 overflow-y-auto pr-1">
         {messages.map((m, idx) => (
           <MessageBubble key={idx} role={m.role} content={m.content} />
+         
         ))}
         {loading && <MessageBubble role="assistant" content="Typing…" muted />}
         <div ref={bottomRef} />
@@ -35,7 +36,7 @@ export default function ChatWindow({ messages, onSend, loading }) {
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => {
             if (e.key === "Enter" && !e.shiftKey) {
-              /* allow submit */
+            
             }
           }}
         />

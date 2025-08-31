@@ -6,7 +6,7 @@ export default function Navbar() {
   const { pathname } = useLocation();
 
   return (
-    <header className="bg-white border-b sticky top-0 z-50">
+    <header className="bg-white-100 border-b sticky top-0 z-50">
       <nav className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link to="/" className="font-semibold text-lg">
           🎓 Academic Chatbot
@@ -35,9 +35,9 @@ export default function Navbar() {
               >
                 Dashboard
               </Link>
-              <span className="hidden sm:inline text-sm text-gray-500">
-                Hi, {user?.name || "Student"}
-              </span>
+              {/* { <span className="hidden sm:inline text-sm text-gray-500"> */}
+                {/* Hi, {user?.name || "Student"} */}
+              {/* </span> } */}
               <button
                 onClick={logout}
                 className="px-3 py-1 rounded bg-red-600 text-white hover:bg-red-700"
