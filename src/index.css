@@ -1,5 +1,1 @@
 @import "tailwindcss";
-body{
-  /* @apply bg-cyan-50; */
-  background-color: rgb(129, 236, 236);
-}
