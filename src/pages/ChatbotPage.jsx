@@ -19,7 +19,7 @@ export default function ChatbotPage() {
     try {
       const res = await api.chat.send({
         message: text,
-        history: messages.slice(-10), // last 10 for context
+        history: messages.slice(-10), 
       });
       setMessages((m) => [...m, { role: "assistant", content: res.reply }]);
     } finally {
