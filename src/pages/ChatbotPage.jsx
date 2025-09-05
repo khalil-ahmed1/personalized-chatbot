@@ -7,7 +7,7 @@ export default function ChatbotPage() {
     {
       role: "assistant",
       content:
-        "Hi! I’m your academic guide. Ask me about syllabus, notes, or PYQs.",
+        "Hi! I'm your academic guide. Ask me about syllabus, notes, or PYQs.",
     },
   ]);
   const [loading, setLoading] = useState(false);
@@ -19,7 +19,7 @@ export default function ChatbotPage() {
     try {
       const res = await api.chat.send({
         message: text,
-        history: messages.slice(-10), 
+        history: messages.slice(-10),
       });
       setMessages((m) => [...m, { role: "assistant", content: res.reply }]);
     } finally {
